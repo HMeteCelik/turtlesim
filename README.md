@@ -15,7 +15,19 @@ This ROS package provides a simple Python script to control the movement of a tu
    git clone https://github.com/your_username/turtle_movement_ros.git
 Build the package using catkin_make:
    ```bash
-    cd path_to_your_ros_workspace
-    catkin_make
-
+   cd path_to_your_ros_workspace
+   catkin_make
+```
+   
 ## Usage
+
+1. Make sure you have ROS environment set up properly and a ROS master running.
+
+2. Launch the turtlesim simulator (if not already running):
+
+   ```bash
+   roscore
+   rosrun turtlesim turtlesim_node 
+3.Run the turtle movement script:
+   ```bash
+   rosrun turtle_movement_ros draw_9.py
